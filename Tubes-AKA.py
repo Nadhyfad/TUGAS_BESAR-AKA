@@ -44,7 +44,7 @@ def ukur_waktu(fungsi, arr):
         return 0, False
 
 # TABELNYA
-ukuran_array = [1, 10, 100, 1000, 10000, 100000]
+ukuran_array = [1, 5, 10, 100, 1000, 5000, 10000, 50000]
 hasil = []
 
 for ukuran in ukuran_array:
@@ -67,13 +67,6 @@ for data in hasil:
     ukuran, waktu_rek, waktu_iter = data
     print(f"| {ukuran:>10} | {waktu_rek:>23.6f} | {waktu_iter:>23.6f} |")
     print("+" + "-"*12 + "+" + "-"*25 + "+" + "-"*25 + "+")
-
-print("\nKesimpulan:")
-print("1. Kompleksitas Waktu: O(n) untuk kedua metode")
-print("2. Kompleksitas Ruang: O(1) Iteratif vs O(n) Rekursif")
-print("3. Iteratif lebih efisien untuk array besar")
-print("4. Iteratif ~1800x lebih cepat dibanding rekursif")
-print("5. Rekursif memiliki overhead pemanggilan fungsi yang signifikan")
 
 # INI UNTUK GRAFIK YAAAAKKKKK   
 ukuran_list = [data[0] for data in hasil]
